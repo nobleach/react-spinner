@@ -6,7 +6,7 @@ Zero configuration(required) loading spinner.
 
 ## Install
 
-Just import the `<LoadingSpinner />` component.
+First ensure that `LoadingSpinner.css` is in the same directory as `LoadingSpinner.js`, then import the `<LoadingSpinner />` component.
 
 ```javascript
     import LoadingSpinner from 'path/to/LoadingSpinner';
