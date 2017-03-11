@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './LoadingSpinner.css';
 
 class LoadingSpinner extends Component {
     render() {
@@ -19,12 +20,16 @@ class LoadingSpinner extends Component {
             'rotate(' + (i * 30) + 'deg) translate(146%)';
 
             bars.push(
-                <div style={barStyle} className="custom-spinner-bar" key={i} />
+                <div
+                    style={barStyle}
+                    className={styles['custom-spinner-bar']}
+                    key={i}
+                />
             );
         }
 
         return (
-          <div className={(props.className || '') + ' custom-spinner'}>
+          <div className={`${props.className} ${styles['custom-spinner']}`}>
             {bars}
           </div>
         );
