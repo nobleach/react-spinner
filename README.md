@@ -1,20 +1,10 @@
-# [React](http://facebook.github.io/react/)-spinner
+# LoadingSpinner (React Component)
 
-Zero configuration loading spinner.
+Zero configuration(required) loading spinner.
 
-[Live demo](https://rawgit.com/chenglou/react-spinner/master/example/index.html) from the example folder. (To build it locally, clone this repo, `npm install && npm start` then open http://localhost:3000/example/)
+[Live demo](https://rawgit.com/nobleach/react-spinner/master/example/index.html) from the example folder. (To build it locally, clone this repo, `npm install && npm start` or `yarn && yarn start` then open http://localhost:7000/example/)
 
 ## install
-
-Bower:
-```sh
-bower install react-spinner
-```
-
-Npm:
-```sh
-npm install react-spinner
-```
 
 Plain old script tag:
 ```html
@@ -25,17 +15,21 @@ Plain old script tag:
 
 The CSS file:
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/react-spinner.css">
+<link rel="stylesheet" type="text/css" href="path/to/LoadingSpinner.css">
 ```
 
 The spinner
 
 ## API
 
-#### &lt;Spinner />
-Adds the spinner, which centers itself based on its container's dimensions. If those are not predefined, simply manually center it by adding more style rules to the exposed `.react-spinner` class [here](https://github.com/chenglou/react-spinner/blob/master/react-spinner.css#L1-L7).
+#### &lt;LoadingSpinner />
+Adds the spinner, which centers itself based on its container's dimensions. If those are not predefined, simply manually center it by adding more style rules to the exposed `.custom-spinner` class [here](https://github.com/chenglou/react-spinner/blob/master/react-spinner.css#L1-L7).
 
-You can also override the `.react-spinner`'s `width` and `height` if you want a bigger or smaller spinner. Everything resizes correctly.
+A convenience property for setting the spinner's bar color has been added.
+Simply add any CSS color as an attribute:
+`<LoadingSpinner barColor="green" />` or `<LoadingSpinner barColor="#c70ab5" />`.
+
+You can also override the `.custom-spinner`'s `width` and `height` if you want a bigger or smaller spinner. Everything resizes correctly.
 
 ## License
 
