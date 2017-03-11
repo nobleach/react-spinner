@@ -27,7 +27,13 @@ Adds the spinner, which centers itself based on its container's dimensions. If t
 
 A convenience property for setting the spinner's bar color has been added.
 Simply add any CSS color as an attribute:
-`<LoadingSpinner barColor="green" />` or `<LoadingSpinner barColor="#c70ab5" />`.
+```
+<LoadingSpinner barColor="green" />
+```
+or
+```
+<LoadingSpinner barColor="#c70ab5" />
+```
 
 You can also override the `.custom-spinner`'s `width` and `height` if you want a bigger or smaller spinner. Everything resizes correctly.
 
